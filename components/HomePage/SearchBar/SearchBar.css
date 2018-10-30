@@ -1,0 +1,38 @@
+.searchBar {
+  -webkit-appearance: none;
+  width: calc(100% - 60px);
+  border: none;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  float: left;
+  padding: 0 0 0 12px;
+  outline: 0;
+  height: 60px;
+}
+
+.searchForm {
+  border-radius: 4px;
+  width: 70%;
+  min-width: 335px;
+  background-color: #fff;
+  padding: 4px;
+  max-width:650px;
+  box-sizing: border-box;
+}
+
+.searchButton {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 4px;
+  background-color: #20c063;
+  color: #fff;
+}
+
+.searchButton:focus {
+  outline: 0;
+}
+
+.searchIcon {
+  font-size: 32px !important;
+}

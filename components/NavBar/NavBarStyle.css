@@ -1,0 +1,101 @@
+.navBar {
+  position: absolute;
+  width:100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  .navBar {
+    visibility: hidden;
+  }
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.navLink {
+  padding-left: 24px;
+}
+.navLink a{
+  flex: 1;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+  text-align: right;
+}
+
+.mobileNavBar {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  /* display: flex; */
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .mobileNavBar {
+    visibility: visible;
+  }
+}
+
+.burgerMenu {
+  color: #fff;
+  font-size: 32px !important;
+  /* flex:1; */
+}
+
+.burgerItem a {
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.burgerItems {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0px 15px;
+}
+
+.flex {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+/* .navBarWrap {
+  padding: 0 15px 0 15px;
+  position: relative;
+  height: 48px;
+  line-height:1.5;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.mainNav {
+  list-style: none;
+}
+
+.mainNav li {
+  display: inline-block;
+  margin-left: 40px;
+  flex: 1;
+}
+
+.mainNav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+} */
