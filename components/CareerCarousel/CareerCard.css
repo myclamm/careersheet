@@ -1,0 +1,12 @@
+.cardContainer {
+  min-width: 300px;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(232, 233, 234);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
