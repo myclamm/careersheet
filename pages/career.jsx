@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import NavBar from '../components/NavBar'
+import Layout from '../components/Layout'
 
 class CareerPage extends Component {
 
@@ -11,9 +13,10 @@ class CareerPage extends Component {
   render() {
     const { career_name } = this.props;
     return (
-      <div>
+      <Layout>
+        <NavBar background="#6CB9C3"/>
         Career: { career_name }
-      </div>
+      </Layout>
     )
   }
 }

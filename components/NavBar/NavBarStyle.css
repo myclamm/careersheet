@@ -17,7 +17,20 @@
   color: #fff;
   font-size: 22px;
   font-weight: 500;
+  cursor: pointer;
 }
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  font-weight:bold;
+  color: #fff;
+}
+
 .navLink {
   padding-left: 24px;
 }
@@ -29,6 +42,12 @@
   font-size: 22px;
   color: #fff;
   text-align: right;
+}
+
+.navLink a:hover {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .mobileNavBar {
@@ -56,46 +75,17 @@
   color: #fff;
   text-decoration: none;
   /* text-transform: uppercase; */
-  font-weight: 300;
+  font-weight: 600;
   font-size: 22px;
 }
 
 .burgerItems {
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgb(1,149,166,0.8); */
   margin-left: -15px;
   margin-right: -15px;
   padding: 0px 15px;
 }
 
-.flex {
-  /* display: flex; */
-  /* justify-content: space-between; */
+.collapsedBackground {
+  background-color: rgb(1,149,166,0.5)
 }
-
-/* .navBarWrap {
-  padding: 0 15px 0 15px;
-  position: relative;
-  height: 48px;
-  line-height:1.5;
-}
-
-.logo {
-  display: inline-block;
-}
-
-.mainNav {
-  list-style: none;
-}
-
-.mainNav li {
-  display: inline-block;
-  margin-left: 40px;
-  flex: 1;
-}
-
-.mainNav li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #fff;
-} */

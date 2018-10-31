@@ -1,101 +1,65 @@
 import React, { Component } from 'react'
 import style from './NavBarStyle.css';
 import Link from 'next/link';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import 'bootstrap/dist/css/bootstrap.css';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import { Collapse, Nav, NavItem } from 'reactstrap';
 
+class NavBar extends Component {
 
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+  constructor (props) {
+    super(props); // invoke constructor of superset Component class
+    const {background} = this.props;
 
-export default class index extends Component {
-  constructor(props){
-    super(props);
     this.state = {
-      collapsed: true
+      collapsed: true,
+      background: background
     }
   }
-  
+
   toggleBurger = () => {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
+      background: !this.state.collapsed ? this.props.background : "rgb(1,149,166,0.8)"
     });
   }
   
   render() {
-    const burgerVis = this.state.collapsed ? 'none' : 'block'
     return (
       <div>
-        <nav className={style.navBar}>
-          <div className={style.logo} >Career Sheet</div>
+        <nav className={style.navBar} style={{backgroundColor:this.state.background}}> 
+        <div className={style.logo}><Link href={`/`}><a>Career Sheet</a></Link></div>
           <div style={{display:"flex"}}>
-            <div className={style.navLink} ><Link href={`/careers`}>Careers</Link></div>
-            <div className={style.navLink} ><Link href={`/majors`}>Majors</Link></div>
-            <div className={style.navLink} ><Link href={`/majors`}>Schools</Link></div>
+            <div className={style.navLink} ><Link href={`/careers`}><a>Careers</a></Link></div>
+            <div className={style.navLink} ><Link href={`/majors`}><a>Majors</a></Link></div>
+            <div className={style.navLink} ><Link href={`/majors`}><a>Schools</a></Link></div>
           </div>
         </nav>
 
-        <nav className={style.mobileNavBar}>
+        <nav className={style.mobileNavBar} style={{backgroundColor:this.state.background}}>
           <div style={{display:'flex', justifyContent: 'space-between', width: '100%'}}>
-            <div className={style.logo} >Career Sheet</div>
+            <div className={style.logo}><Link href={`/`}><a>Career Sheet</a></Link></div>
             <MenuIcon onClick={this.toggleBurger} className={style.burgerMenu}></MenuIcon> 
           </div>
             <Collapse isOpen={!this.state.collapsed} navbar className={style.burgerItems}>
               <Nav navbar >
                 <NavItem className={style.burgerItem}>
-                  <Link href={`/majors`}>Schools</Link>
+                  <Link href={`/careers`}><a>Careers</a></Link>
                 </NavItem>
                 <NavItem className={style.burgerItem}>
-                  <Link href={`/careers`}>Careers</Link>
+                  <Link href={`/majors`}><a>Majors</a></Link>
                 </NavItem>
                 <NavItem className={style.burgerItem}>
-                  <Link href={`/schools`}>Schools</Link>
+                  <Link href={`/schools`}><a>Schools</a></Link>
                 </NavItem>
               </Nav>
             </Collapse>
-          {/* <div style={{display: burgerVis}}>
-            <div>Heyyy</div>
-          </div> */}
-          
-          {/* <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse> */}
-        </nav>
-        
-        {/* <Container fluid={true}>
-          <Row className={style.navBar}>
-            <Col xs="2">Career Sheet</Col>
-            <Col xs={{ size: 3}} md={{ size: 4, offset: 6 }}>
-            <ul className={style.mainNav}>
-              <li><Link href={`/careers`}><a>Careers</a></Link></li>
-              <li><Link href={`/majors`}><a>Majors</a></Link></li>
-              <li><Link href={`/majors`}><a>Schools</a></Link></li>
-            </ul>
-            </Col>
-          </Row>
-          </Container> */}
-
-          {/* <div className={style.navBar}>
-              <div className={style.logo}>Career Sheet</div>
-              <ul className={style.mainNav}>
-                <li><Link href={`/careers`}><a>Careers</a></Link></li>
-                <li><Link href={`/majors`}><a>Majors</a></Link></li>
-                <li><Link href={`/majors`}><a>Schools</a></Link></li>
-              </ul>
-          </div> */}
-        
+        </nav>        
 
       </div>
     )
   }
 }
+
+export default NavBar
