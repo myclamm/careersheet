@@ -585,6 +585,22 @@ var API = {
                 job_title: 'Software Engineer',
                 users: '12,085',
                 avg_salary: '$112,000'
+              }, {
+                job_title: 'Account Executive',
+                users: '3,116',
+                avg_salary: '$123,000'
+              }, {
+                job_title: 'Software Engineer',
+                users: '12,085',
+                avg_salary: '$112,000'
+              }, {
+                job_title: 'Account Executive',
+                users: '3,116',
+                avg_salary: '$123,000'
+              }, {
+                job_title: 'Software Engineer',
+                users: '12,085',
+                avg_salary: '$112,000'
               }]);
 
             case 1:
@@ -29724,7 +29740,7 @@ var nextRoutes = __webpack_require__(/*! next-routes */ "./node_modules/next-rou
 
 var routes = nextRoutes(); // This file is used by both the client and the server
 
-routes.add('career', '/career/:slug', '/career'); // routes.add('generic', '/:pagename')
+routes.add('/career/:slug', '/career'); // routes.add('generic', '/:pagename')
 
 module.exports = routes;
 

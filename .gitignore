@@ -5,4 +5,4 @@ npm-debug.log
 .vscode/*
 notes.md
 /scripts
-.next
+.next/*
