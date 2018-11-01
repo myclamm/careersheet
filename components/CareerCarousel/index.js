@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import style from './index.css';
-import Carousel from './Carousel.js';
-import CareerCard from './CareerCard.js'
+import style from './CareerCarousel.css';
+import Carousel from '../Carousel';
+import CareerCard from './CareerCard'
 
 class CareerCarousel extends Component {
   render() {
     const {items} = this.props;
     return (
-      <div className={style.container}>
-        <div className={style.carouselTitle}>Explore Career Profiles</div>
-
-        <Carousel items={items} Container={CareerCard}></Carousel>
+      <div className={style.carouselContainer}>
+        <div className={style.carouselTitle}>Explore Popular Careers</div>
+        <Carousel items={items} render={CareerCard}></Carousel>
       </div>
     )
   }
