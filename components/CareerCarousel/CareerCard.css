@@ -1,4 +1,4 @@
-.cardContainer {
+/*.cardContainer {
   min-width: 300px;
   height: 150px;
   border: 1px solid grey;
@@ -9,4 +9,32 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}*/
+.cardContainer {
+    display: flex;
+    overflow: hidden;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 233, 234);
+    border-image: initial;
+    flex: 1 1 0%;
+    margin: 0 7px;
+}
+.cardDetail{
+  margin: 0 0 0 7px;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  height: 96px;
+  overflow: hidden;
+}
+
+.cardDetail .cardTitle,
+.cardDetail .cardSubDetail{
+  margin: 5px 0;
+}
+
+.cardDetail .cardTitle {
+  font-weight: bold;
 }

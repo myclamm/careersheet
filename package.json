@@ -27,6 +27,7 @@
     "less": "^3.8.1",
     "morgan": "^1.9.1",
     "next": "^7.0.2",
+    "next-images": "^1.0.1",
     "next-routes": "^1.4.2",
     "npm": "^6.4.1",
     "react": "^16.6.0",
@@ -35,5 +36,8 @@
     "react-transition-group": "^2.5.0",
     "reactstrap": "^6.5.0",
     "styled-components": "^4.0.2"
+  },
+  "devDependencies": {
+    "react-alice-carousel": "^1.12.0"
   }
 }

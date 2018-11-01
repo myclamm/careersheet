@@ -6,7 +6,12 @@ class CareerCard extends Component {
     const {item} = this.props
     return (
       <div className={style.cardContainer}>
-        {item.job_title}
+        <ul className={style.cardDetail}>
+           <li className={style.cardTitle}>{item.job_title}</li>
+           <li className={style.cardSubDetail}>Users : {item.users}</li>
+           <li className={style.cardSubDetail}>Avg. Salary : {item.avg_salary}</li>
+        </ul>
+       
       </div>
     )
   }
