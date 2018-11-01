@@ -7,8 +7,6 @@ import CareerCarousel from '../components/CareerCarousel'
 import API from '../lib/api';
 import {Router} from '../routes'
 
-import 'bootstrap/dist/css/bootstrap.css';
-
 class HomePage extends Component {
   constructor (props) {
     super(props)
