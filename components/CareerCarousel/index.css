@@ -1,8 +1,60 @@
 .container {
   padding-top: 20px;
 }
+
 .carouselTitle {
   font-size: 20px;
   font-weight: 600;
   color: #474e52;
+  padding-bottom: 20px;
+}
+
+.carouselControls{
+	position: relative;
+	top : 30px;
+}
+
+.carouselControls {
+	opacity: 0
+}
+
+.container:hover > .carouselControls {
+    opacity: 1;
+}
+
+.carouselRightBtn, 
+.carouselLeftBtn {
+   z-index: 1;
+   position: absolute;
+   transition: opacity .2s ease-in;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   box-shadow: none;
+   outline: none;
+}
+
+.carouselRightBtn {
+   right: -22px;
+}
+
+.carouselLeftBtn {
+   left: -22px;
+}
+
+.carouselRightIcon,
+.carouselLeftIcon
+ {
+   width: 44px;
+   height: 44px;
+}
+
+.carouselRightIcon {
+	background-image: url('/../../static/img/carousel_right_arrow.jpg');
+	background-size: cover;	
+}
+
+.carouselLeftIcon {
+	background-image: url('/../../static/img/carousel_left_arrow.jpg');
+	background-size: cover;	
 }
