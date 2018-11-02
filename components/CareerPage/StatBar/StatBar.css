@@ -1,0 +1,9 @@
+.container {
+  padding:20px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.userIcon {
+  color: #156987;
+}

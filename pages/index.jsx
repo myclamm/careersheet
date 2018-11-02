@@ -16,12 +16,17 @@ class HomePage extends Component {
   }
 
   searchClick = () => {
-    Router.pushRoute('/career/'+'account-executive')
+    // [ML] Note: see next-route docs for routing usage https://www.npmjs.com/package/next-routes
+    Router.pushRoute('career', {slug: 'account-executive'})
   }
   
   async componentWillMount() {
-    const res = await API.getPopularCareers();
-    this.setState({popularCareers: res});
+    const popularCareers = await API.getPopularCareers();
+    
+    // [ML] Tip: Never mutate state. Instead, perform full copy and re-assign.
+    const state = Object.assign({},this.state);
+    state.popularCareers = popularCareers;
+    this.setState(state);
   }
 
   render() {

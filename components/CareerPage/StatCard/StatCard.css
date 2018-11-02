@@ -1,0 +1,25 @@
+.cardContainer {
+  overflow: hidden;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(232, 233, 234);
+  border-image: initial;
+  flex: 1 1 0%;
+  margin-right: 7px;
+  padding: 7px;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  color: #474e52;
+  text-align: center;
+}
+
+.cardValue {
+  text-align: center;
+  font-size: 38px;
+  color: #474e52;
+}
