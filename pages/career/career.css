@@ -1,3 +1,18 @@
 .userIcon {
   color: #156987;
 }
+
+* {
+  font-family: 'Avenir-light';
+  color: #474e52;
+}
+
+.titleText {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  margin: 12px 0px 0px;
+  /* letter-spacing: 1px; */
+}

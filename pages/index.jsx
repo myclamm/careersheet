@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import CareerCarousel from '../components/CareerCarousel'
 import API from '../lib/api';
 import {Router} from '../routes'
+import style from './index.css';
 
 class HomePage extends Component {
   constructor (props) {

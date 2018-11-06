@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center; 
   /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/static/img/balloons.jpg) bottom center no-repeat; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 20%), url(/static/img/balloons.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 20%), url(/static/img/balloons.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -15,7 +15,7 @@
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .heroImage {
     height: 385px;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 20%) 0% 0% / cover, url(/static/img/balloons.jpg) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0) 20%) 0% 0% / cover, url(/static/img/balloons.jpg) center no-repeat;
     padding: 84px 0px 0px;
   }
 }
@@ -23,7 +23,7 @@
 @media screen and (max-width: 480px) {
   .heroImage {
     height: 385px;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 20%) 0% 0% / cover, url(/static/img/balloons.jpg) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 20%) 0% 0% / cover, url(/static/img/balloons.jpg) center no-repeat;
     padding: 84px 0px 0px;
   }
 }

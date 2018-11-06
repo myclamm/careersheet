@@ -57,6 +57,7 @@
   /* display: flex; */
   box-sizing: border-box;
   visibility: hidden;
+  z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -67,8 +68,7 @@
 
 .burgerMenu {
   color: #fff;
-  font-size: 32px !important;
-  /* flex:1; */
+  font-size: 24px !important;
 }
 
 .burgerItem a {

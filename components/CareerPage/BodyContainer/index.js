@@ -5,9 +5,11 @@ import style from './BodyContainer.css'
 class BodyContainer extends Component {
   render() {
     return (
-      <Container fluid={true} className={style.container}>
-        {this.props.children}
-      </Container>
+      <div className={style.heroBackground}>
+        <Container fluid={true} className={style.heroContainer}>
+          {this.props.children}
+        </Container>
+      </div>
     )
   }
 }

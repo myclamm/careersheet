@@ -1,0 +1,39 @@
+.heroCard {
+  /* padding: 10px; */
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 33px rgba(0,0,0,.1);
+  border-radius: 8px;
+  border-shadow: 0 6px 15px rgba(36,37,38,0.08);
+  padding: 2em 1em 3em;
+  flex: 3;
+  min-width: 300px;
+  max-width: 600px;
+  margin-right: 7px;
+}
+
+.heroCard_topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.heroCard_topRow h2 {
+  font-size: 20px
+}
+
+.heroContainer {
+  display: flex;
+  padding: 20px;
+  flex-flow: wrap;
+  flex-wrap: wrap-reverse;
+  box-sizing: border-box;
+}
+
+.heroLeft {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-right: 10px;
+  min-width: 300px;
+  flex:2;
+}

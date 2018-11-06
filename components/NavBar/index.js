@@ -40,7 +40,8 @@ class NavBar extends Component {
         <nav className={style.mobileNavBar} style={{backgroundColor:this.state.background}}>
           <div style={{display:'flex', justifyContent: 'space-between', width: '100%'}}>
             <div className={style.logo}><Link href={`/`}><a>Career Sheet</a></Link></div>
-            <MenuIcon onClick={this.toggleBurger} className={style.burgerMenu}></MenuIcon> 
+            {/* <MenuIcon onClick={this.toggleBurger} className={style.burgerMenu}></MenuIcon> */}
+            <i onClick={this.toggleBurger} className={[style.burgerMenu,"fa fa-bars"].join(' ')}></i> 
           </div>
             <Collapse isOpen={!this.state.collapsed} navbar className={style.burgerItems}>
               <Nav navbar >

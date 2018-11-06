@@ -5,6 +5,7 @@ import CareerTitle from '../../components/CareerPage/CareerTitle'
 import BodyContainer from '../../components/CareerPage/BodyContainer'
 import StatBar from '../../components/CareerPage/StatBar'
 import StatCard from '../../components/CareerPage/StatCard'
+import CareerHero from '../../components/CareerPage/Hero'
 import style from './career.css';
 import API from '../../lib/api';
 
@@ -43,19 +44,20 @@ class CareerPage extends Component {
 
   render() {
     const { careerId } = this.props;
-    const profileIcon = (<i className={[style.userIcon,"fa fa-user"].join(' ')}></i>)
-    const salaryIcon = (<i className={[style.userIcon,"fa fa-tag"].join(' ')}></i>)
-    const tenureIcon = (<i className={[style.userIcon,"fa fa-hourglass"].join(' ')}></i>)
+    const profileIcon = (<i className={[style.userIcon,"fa fa-user fa-3x"].join(' ')}></i>)
+    const salaryIcon = (<i className={[style.userIcon,"fa fa-tag fa-3x"].join(' ')}></i>)
+    const tenureIcon = (<i className={[style.userIcon,"fa fa-hourglass fa-3x"].join(' ')}></i>)
     return (
       <Layout>
-        <NavBar background="#6CB9C3"/>
+        <NavBar background="transparent"/>
         <BodyContainer>
           <CareerTitle>{ this.state.careerName }</CareerTitle>
           <StatBar careerId={careerId}>
             <StatCard title="Current Profiles" value={this.state.populationCount} icon={profileIcon}></StatCard>
             <StatCard title="Average Salary" value={this.state.averageSalary} icon={salaryIcon}></StatCard>
-            <StatCard title="Average Tenure" value={this.state.averageTenure} icon={tenureIcon}></StatCard>
+            <StatCard title="Average Tenure" value={this.state.averageTenure} icon={tenureIcon} ></StatCard>
           </StatBar>
+          <CareerHero></CareerHero>
         </BodyContainer>
       </Layout>
     )

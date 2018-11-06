@@ -1,3 +1,16 @@
-.container {
-  padding: 80px 40px
+.heroContainer {
+  padding: 80px 40px;
+  min-height: 280px;
+  max-width: 1140px;
 }
+
+.heroBackground {
+  background: #6CB9C3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(249deg,#6CB9C3,#0E9CAE);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+

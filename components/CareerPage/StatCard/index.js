@@ -7,12 +7,16 @@ class StatCard extends Component {
     const {title, icon, value} = this.props
     return (
       <div className={style.cardContainer}>
-        <div className={style.cardTitle}>
-          {title}
+        <div className={style.cardRight}>
+          <div className={style.cardValue}>
+          {value}
+          </div>
+          <div className={style.cardTitle}>
+            {title}
+          </div>
+
         </div>
-        <div className={style.cardValue}>
-        {icon} {value}
-        </div>
+
       </div>
     )
   }
