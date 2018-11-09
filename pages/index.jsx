@@ -18,7 +18,8 @@ class HomePage extends Component {
 
   searchClick = () => {
     // [ML] Note: see next-route docs for routing usage https://www.npmjs.com/package/next-routes
-    Router.pushRoute('career', {slug: 'account-executive'})
+    // Router.pushRoute('career', {slug: 'account-executive'})
+    document.location.href = 'http://localhost:3000/career/account-executive';
   }
   
   async componentWillMount() {

@@ -5,8 +5,8 @@ import style from './BodyContainer.css'
 class BodyContainer extends Component {
   render() {
     return (
-      <div className={style.heroBackground}>
-        <Container fluid={true} className={style.heroContainer}>
+      <div>
+        <Container fluid={true} className={style.bodyContainer}>
           {this.props.children}
         </Container>
       </div>
