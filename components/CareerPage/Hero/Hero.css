@@ -37,3 +37,35 @@
   min-width: 300px;
   flex:2;
 }
+
+.heroCard_midRow {
+  display: flex;
+  align-items: flex-end; 
+}
+
+.yAxisTitleContainer {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.yAxisTitle {
+  font-size: 14px;
+  position: absolute;
+  margin-left: 40px;
+  width: 120px;
+  text-align: center;
+}
+.xAxisTitle {
+  font-size: 14px;
+}
+.barChart {
+  flex:10;
+  margin-left: -10px;
+}

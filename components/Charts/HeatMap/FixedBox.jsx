@@ -11,7 +11,7 @@ FixedBox.defaultProps = {
 
 FixedBox.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  width: PropTypes.number.isRequired,
+  width: PropTypes.number,
 };
 
 export default FixedBox;
