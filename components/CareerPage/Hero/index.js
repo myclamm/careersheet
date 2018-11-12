@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
 import BarGraph from '../../Charts/BarGraph'
+import CommonMajors from '../CommonMajors'
 import style from './Hero.css'
 
 class CareerHero extends Component {
   constructor(props) {
     super(props)
-    this.data = {
+    this.jobYearData = {
       labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
       series: [
         [1, 5, 8, 6, 3, 2, 1, 2, 1, 1]
       ]
     }
-    this.horizontalOptions = {
-      seriesBarDistance: 10,
-      reverseData: true,
-      horizontalBars: true,
-      axisY: {
-        offset: 70
-      }    
+    this.commonMajorsData = {
+      labels: ['Business Administration and Management', 'Finance', 'Marketing', 'Accounting', 'Business', 'Psychology', 'Economics', 'Business Management', 'Communications', 'English'],
+      series: [
+        [1, 5, 8, 6, 3, 2, 1, 2, 1, 1]
+      ]
     }
   }
   render() {
@@ -25,10 +24,8 @@ class CareerHero extends Component {
       <div className={style.heroContainer}>
 
         <div className={style.heroLeft}>
-          <BarGraph
-            chartClass={'ct-major-third'}
-            data={this.data}
-            options={this.horizontalOptions}
+          <CommonMajors
+            data={this.commonMajorsData}
           />
         </div>
 
@@ -43,7 +40,7 @@ class CareerHero extends Component {
             </div>
             <div className={style.barChart}>
               <BarGraph
-                data={this.data}
+                data={this.jobYearData}
               />
             </div>
           </div>

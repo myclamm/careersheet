@@ -8,6 +8,7 @@ import StatBar from '../../components/CareerPage/StatBar'
 import StatCard from '../../components/CareerPage/StatCard'
 import CareerHero from '../../components/CareerPage/Hero'
 import CareerHeatMap from '../../components/CareerPage/CareerHeatMap'
+import Head from 'next/head'
 import style from './career.css';
 import API from '../../lib/api';
 
@@ -58,6 +59,10 @@ class CareerPage extends Component {
     const tenureIcon = (<i className={[style.userIcon,"fa fa-hourglass fa-3x"].join(' ')}></i>)
 
     return (
+      <div>
+      <Head>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+      </Head>
       <Layout>
         <NavBar background="transparent"/>
         <HeroContainer>
@@ -78,6 +83,7 @@ class CareerPage extends Component {
           </BodyContainer>
         </div>
       </Layout>
+      </div>
     )
   }
 }
